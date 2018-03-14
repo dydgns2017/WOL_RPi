@@ -3,4 +3,14 @@ How to WOL on RPI?
 
 if you operating WOL on RPi, try to this script
 
-wget
+Envir Server Setting
+sudo apt-get update
+sudo apt-get install -y apache2 php libapache2-mod-php
+sudo service apache2 restart
+
+cd /var/www/html
+sudo wget https://github.com/dydgns2017/WOL_RPi/raw/master/.gitignore/WOL.zip
+sudo unzip WOL.zip
+
+and access your RPi web Server through web-browser
+Enter in the text bar MAC address!
